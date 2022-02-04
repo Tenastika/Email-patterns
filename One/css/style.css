@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  padding-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+  background-color: #F9FAFB;
+  border-radius: 10px;
+}
+
+.container .line {
+  display: block;
+  background-color: #E8EAED;
+  width: 90%;
+  height: 2px;
+}
+
+.container .header {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.container .menu__item {
+  text-align: center;
+}
+
+.container .content1__info {
+  max-width: 300px;
+  margin-left: 30px;
+}
+
+.container .content2__info {
+  max-width: 300px;
+  margin-right: 50px;
+  margin-left: auto;
+  text-align: end;
+}
