@@ -69,11 +69,42 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
   .menu td{
     padding-left: 20px;
   }
+
+  .cards-td {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif, 'Verdana';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .card-txt-tr td{
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-btn-tr td{
+    padding-top: 10px;
+  }
+
+  .card-btn-tr a{
+    background-color: #fb758c;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 3px;
+  }
 </style>
 </head>
 
 <body style="margin: 0; padding: 0;">
-<div style="font-size:0px;color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Прехеадер письма</div>
+<div style="font-size:0px;color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Preheader</div>
 <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#fb758c">
   <tr>
     <td>
@@ -99,10 +130,70 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
           </td>
         </tr>
         <tr>
-          <td class="img-td" width="600">
+          <td class="img-td" width="600" valign="top">
             <a href="#" target="_blank">
               <img src="https://picsum.photos/id/1064/600/300" alt="Фоновое изображение">
             </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="cards-td" bgcolor="#ededed">
+            <table class="cards" cellpadding="0" cellspacing="0" width="600" align="center" valign="top">
+              <tr class="card-img-tr" width="600">
+                <td align="center">
+                  <img src="https://picsum.photos/id/82/130/150" alt="Изображение товара">
+                </td>
+                <td align="center">
+                  <img src="https://picsum.photos/id/82/130/150" alt="Изображение товара">
+                </td>
+              </tr>
+              <tr class="card-txt-tr">
+                <td align="center">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates at, delectus commodi vitae ratione odio.</p>
+                </td>
+                <td class="card-txt-td" align="center">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates at, delectus commodi vitae ratione odio.</p>
+                </td>
+              </tr>
+              <tr class="card-btn-tr">
+                <td align="center">
+                  <a href="#" target="_blank">button</a>
+                </td>
+                <td class="card-btn-td" align="center">
+                  <a href="#" target="_blank">button</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="cards-td" bgcolor="#ededed">
+            <table class="cards" cellpadding="0" cellspacing="0" width="600" align="center" valign="top">
+              <tr class="card-img-tr" width="600">
+                <td align="center">
+                  <img src="https://picsum.photos/id/82/130/150" alt="Изображение товара">
+                </td>
+                <td align="center">
+                  <img src="https://picsum.photos/id/82/130/150" alt="Изображение товара">
+                </td>
+              </tr>
+              <tr class="card-txt-tr">
+                <td align="center">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates at, delectus commodi vitae ratione odio.</p>
+                </td>
+                <td class="card-txt-td" align="center">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates at, delectus commodi vitae ratione odio.</p>
+                </td>
+              </tr>
+              <tr class="card-btn-tr">
+                <td align="center">
+                  <a href="#" target="_blank">button</a>
+                </td>
+                <td class="card-btn-td" align="center">
+                  <a href="#" target="_blank">button</a>
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
       </table>
