@@ -16,7 +16,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
     line-height: 100%;
   }
 
-  [style*="Verdana"] {font-family: 'Verdana', arial, sans-serif !important;}
+  [style*="Monaco"] {font-family: 'Lucida Console', arial, sans-serif !important;}
 
   img {
     outline: none;
@@ -47,13 +47,14 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
   .main {
     margin-top: 50px;
     overflow: hidden;
+    box-shadow: 0 0 10px 1px #797979;
   }
 
   .header-td {
     color: #464646;
     padding-top: 30px;
     padding-bottom: 30px;
-    font-family: Arial, Helvetica, sans-serif, 'Verdana';
+    font-family: 'Lucida Console', arial, sans-serif !important;
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 0.3px;
@@ -70,10 +71,35 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
     padding-left: 20px;
   }
 
+  .inline-block-td {
+    min-width: 300px !important;
+    max-width: 600px !important;
+  }
+  .block1-div{
+    display: inline-block;
+    max-width: 290px;
+    min-width: 250px;
+    margin: 0;
+    padding: 0;
+    font-size: 0px;
+  }
+
+  .block1-div td {
+    padding-top:20px;
+  }
+  
+
+  .inline-block-td p{
+    font-family: 'Lucida Console', arial, sans-serif !important;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
   .cards-td {
     padding-top: 30px;
     padding-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif, 'Verdana';
+    font-family: 'Lucida Console', arial, sans-serif !important;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -90,7 +116,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
   }
 
   .card-btn-tr a{
-    background-color: #fb758c;
+    background-color: #5B5B5B;
     display: inline-block;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -99,6 +125,21 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
     color: #ffffff;
     text-transform: uppercase;
     border-radius: 3px;
+  }
+
+  .columns-td {
+    padding-top: 30px;
+    font-family: 'Lucida Console', arial, sans-serif !important;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .column-td div{
+    display: inline-block;
+    
+    width: 170px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .footer-logo-td {
@@ -115,12 +156,20 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  @media (max-width: 500px) {
+    .column-td div{
+      display: block !important;
+      margin-bottom: 30px;
+      width: 300px !important;
+    }
+  }
 </style>
 </head>
 
 <body style="margin: 0; padding: 0;">
 <div style="font-size:0px;color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Preheader</div>
-<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#fb758c">
+<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#e0e0e0">
   <tr>
     <td>
       <table class="main" cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="">
@@ -151,6 +200,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
             </a>
           </td>
         </tr>
+       
         <tr>
           <td class="cards-td" bgcolor="#ededed">
             <table class="cards" cellpadding="0" cellspacing="0" width="600" align="center" valign="top">
@@ -181,6 +231,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
             </table>
           </td>
         </tr>
+
         <tr>
           <td class="cards-td" bgcolor="#ededed">
             <table class="cards" cellpadding="0" cellspacing="0" width="600" align="center" valign="top">
@@ -207,6 +258,33 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                 <td class="card-btn-td" align="center">
                   <a href="#" target="_blank">button</a>
                 </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="columns-td">
+            <table class="columns" cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="#e1e1e1">
+              <tr align="center">
+                <td class="column-td" align="center" >
+                  <div>
+                    <img src="https://picsum.photos/id/98/50/50" alt="Image">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit provident autem quaerat omnis ex natus exercitationem a iste sit perspiciatis.</p>
+                  </div>
+                  <div>
+                    <img src="https://picsum.photos/id/75/50/50" alt="Image">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit provident autem quaerat omnis ex natus exercitationem a iste sit perspiciatis.</p>
+                  </div>
+                  <div>
+                    <img src="https://picsum.photos/id/32/50/50" alt="Image">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit provident autem quaerat omnis ex natus exercitationem a iste sit perspiciatis.</p>
+                  </div>
+                </td>
+                
               </tr>
             </table>
           </td>
@@ -225,9 +303,9 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                 <td class="footer-links-td">
                   <table class="footer-links" cellpadding="0" cellspacing="0" width="500" align="center" >
                     <tr>
-                      <td align="center"><a href="#" target="_blank" style="font-family: Arial, Helvetica, sans-serif, 'Verdana';" >link1</a></td>
-                      <td align="center"><a href="#" target="_blank" style="font-family: Arial, Helvetica, sans-serif, 'Verdana';" >link2</a></td>
-                      <td align="center"><a href="#" target="_blank" style="font-family: Arial, Helvetica, sans-serif, 'Verdana';" >link3</a></td>
+                      <td align="center"><a href="#" target="_blank" style="font-family: 'Lucida Console', arial, sans-serif !important;" >link1</a></td>
+                      <td align="center"><a href="#" target="_blank" style="font-family: 'Lucida Console', arial, sans-serif !important;" >link2</a></td>
+                      <td align="center"><a href="#" target="_blank" style="font-family: 'Lucida Console', arial, sans-serif !important;" >link3</a></td>
                     </tr>
                   </table>
                 </td>
